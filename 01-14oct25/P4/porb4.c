@@ -14,7 +14,7 @@ int main(){
     sec=sec1+sec2;
     while(sec>=60){
         sec-=60;
-        sec++;
+        min++;
     }
     while(min>=60){
         min-=60;
