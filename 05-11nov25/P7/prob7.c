@@ -1,9 +1,8 @@
 #include <stdio.h>
 int interschimbare(int a, int b){
-    int temp;
-    temp=a;
-    a=b;
-    b=temp;
+    a = a^b;
+    b = a^b;
+    a = a^b;
     printf("Dupa interschimbare, valoarea lui a este: %d\n", a);
     printf("Dupa interschimbare, valoarea lui b este: %d\n", b);
     return 0;
